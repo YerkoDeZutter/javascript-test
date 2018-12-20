@@ -36,6 +36,22 @@ function MoveLayer(evt) {
 
       }
     }
+
+    selections[selectionNum].classList.add = "front";
+    selections[selectionNum].classList.remove = "toFar back";
+
+    consol.log(selectionNum)
+
+    if (selectionNum == 4) {
+
+    }
+
+    selections[selectionNum+1].classList.remove = "front";
+    selections[selectionNum-1].classList.remove = "front";
+
+    selections[selectionNum-1].classList.add = "toFar";
+    selections[selectionNum+1].classList.add = "back";
+
   } else {
 
   }
