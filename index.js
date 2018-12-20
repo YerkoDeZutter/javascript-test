@@ -1,11 +1,7 @@
-let topH = document.querySelector("#top");
-let midH = document.getElementById('mid');
-let botH = document.getElementById('bot');
-
-console.log(topH);
-
-topH.style.display = "none";
+var topH = document.getElementById("topH");
+var midH = document.getElementById('mid');
+var botH = document.getElementById('bot');
 
 function MoveLayer() {
-  top.style.color = "red";
+  topH.style.color = "red";
 }
