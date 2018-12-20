@@ -2,6 +2,8 @@ var topH = document.getElementById("topH");
 var midH = document.getElementById('mid');
 var botH = document.getElementById('bot');
 var scrollE = true;
+var selections = document.querySelectorAll(".section");
+var selectionNum = 0;
 
 var contai = document.getElementById("container");
 
@@ -13,10 +15,26 @@ function MoveLayer(evt) {
       topH.style.color = "red";
       var colChange = setTimeout(grayC, 800);
       scrollE = false;
+
+
+      if (selectionNum > 3) {
+        selectionNum++
+      } else {
+
+      }
+
+
+
     } else {
       topH.style.color = "blue";
       var colChange = setTimeout(grayC, 800);
       scrollE = false;
+
+      if (selectionNum < -1) {
+        selectionNum--
+      } else {
+
+      }
     }
   } else {
 
