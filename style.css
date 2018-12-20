@@ -13,12 +13,22 @@ body {
   height: 100vh;
 }
 
+.section{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #topH {
   background-color: red;
 }
 
 #midH {
   background-color: blue;
+}
+
+#botH{
+  background-color: gray;
 }
 
 .front {
