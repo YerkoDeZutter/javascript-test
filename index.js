@@ -17,7 +17,7 @@ function MoveLayer(evt) {
       scrollE = false;
 
 
-      if (selectionNum > 3) {
+      if (selectionNum < 3) {
         selectionNum++
       } else {
 
@@ -30,7 +30,7 @@ function MoveLayer(evt) {
       var colChange = setTimeout(grayC, 800);
       scrollE = false;
 
-      if (selectionNum < -1) {
+      if (selectionNum > -1) {
         selectionNum--
       } else {
 
@@ -40,7 +40,7 @@ function MoveLayer(evt) {
     selections[selectionNum].classList.add = "front";
     selections[selectionNum].classList.remove = "toFar back";
 
-    consol.log(selectionNum)
+    console.log(selectionNum)
 
     if (selectionNum == 4) {
 
