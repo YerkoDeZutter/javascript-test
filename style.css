@@ -1,14 +1,41 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   width: 100vw;
   height: 100vh;
 }
 
-#container{
+#container {
   width: 100vw;
   height: 100vh;
+}
+
+#topH {
+  background-color: red;
+}
+
+#midH {
+  background-color: blue;
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 1;
+}
+
+.toFar {
+  width: 110%;
+  height: 110%;
+  opacity: 0;
+}
+
+.back {
+  width: 90%;
+  height: 90%;
+  opacity: 0;
 }
