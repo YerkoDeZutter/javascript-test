@@ -48,10 +48,6 @@ function MoveLayer(evt) {
 
     console.log(selectionNum)
 
-    if (selectionNum == 4) {
-
-    }
-
     selections[selectionNum+1].classList.remove = "front";
     selections[selectionNum-1].classList.remove = "front";
 
