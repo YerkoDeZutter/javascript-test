@@ -43,16 +43,16 @@ function MoveLayer(evt) {
       }
     }
 
-    selections[selectionNum].classList.add = "front";
-    selections[selectionNum].classList.remove = "toFar back";
+    selections[selectionNum].classList.add("front");
+    selections[selectionNum].classList.remove("toFar", "back");
 
-    console.log(selectionNum)
+    console.log(selections)
 
-    selections[selectionNum+1].classList.remove = "front";
-    selections[selectionNum-1].classList.remove = "front";
+    selections[selectionNum+1].classList.remove("front");
+    selections[selectionNum-1].classList.remove("front");
 
-    selections[selectionNum-1].classList.add = "toFar";
-    selections[selectionNum+1].classList.add = "back";
+    selections[selectionNum-1].classList.add("toFar");
+    selections[selectionNum+1].classList.add("back");
 
   } else {
 
