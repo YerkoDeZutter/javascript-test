@@ -7,14 +7,14 @@ var contai = document.getElementById("container");
 contai.addEventListener("wheel", MoveLayer);
 
 function MoveLayer(evt) {
-  if(evt.deltaY >0){
-               topH.style.color = "red";
-               var colChange = setTimeout(grayC, 800);
-           } else {
-               topH.style.color = "blue";
-           }
+  if (evt.deltaY > 0) {
+    topH.style.color = "red";
+    var colChange = setTimeout(grayC, 800);
+  } else {
+    topH.style.color = "blue";
+  }
 }
 
-function grayC(evt){
-  
+function grayC(evt) {
+  topH.style.color = "gray";
 }
