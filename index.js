@@ -16,14 +16,14 @@ contai.addEventListener("wheel", MoveLayer);
 
 
 function MoveLayer(evt) {
-  if(scrollE == true){
+  if(scrollE == true && selectionNum < selections.length){
     if (evt.deltaY > 0) {
       topH.style.color = "red";
       var colChange = setTimeout(grayC, 800);
       scrollE = false;
 
 
-      if (selectionNum < 3) {
+      if (selectionNum < selections.length) {
         selectionNum++
       } else {
 
@@ -36,7 +36,7 @@ function MoveLayer(evt) {
       var colChange = setTimeout(grayC, 800);
       scrollE = false;
 
-      if (selectionNum > -1) {
+      if (selectionNum > 0) {
         selectionNum--
       } else {
 
@@ -46,7 +46,7 @@ function MoveLayer(evt) {
     selections[selectionNum].classList.add("front");
     selections[selectionNum].classList.remove("toFar", "back");
 
-    console.log(selections)
+    console.log(selectionNum)
 
     selections[selectionNum+1].classList.remove("front");
     selections[selectionNum-1].classList.remove("front");
