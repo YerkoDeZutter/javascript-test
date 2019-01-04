@@ -18,7 +18,6 @@ contai.addEventListener("wheel", MoveLayer);
 function MoveLayer(evt) {
   if(scrollE == true && selectionNum < selections.length){
     if (evt.deltaY > 0) {
-      topH.style.color = "red";
       var colChange = setTimeout(grayC, 800);
       scrollE = false;
 
@@ -32,7 +31,6 @@ function MoveLayer(evt) {
 
 
     } else {
-      topH.style.color = "blue";
       var colChange = setTimeout(grayC, 800);
       scrollE = false;
 
