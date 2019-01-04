@@ -22,7 +22,7 @@ function MoveLayer(evt) {
       scrollE = false;
 
 
-      if (selectionNum < selections.length) {
+      if (selectionNum < selections.length-1) {
         selectionNum++
       } else {
 
